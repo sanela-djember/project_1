@@ -53,7 +53,7 @@
 
 <!----------------------------------ABOUT SECTION --------------------->
 
-<div class="about__section">
+<div id="about" class="about__section">
  <div class="content">
     <h1>
         ABOUT <span>LoremIpsum</span>
@@ -73,7 +73,7 @@
 
 <!---------------------------MENU SECTION --------------------------------->
 
-<div class="menu__container">
+<div id="menu" class="menu__container">
     <div class="title">
         <h2>
             Special <span>Food</span>Menu
@@ -83,15 +83,15 @@
         </p>
     </div>
     <div class="links">
-        <li>All</li>
-        <li>Featured</li>
-        <li>Today's Special</li>
-        <li>New Arrivals</li>
+        <li data-filter=".All">All</li>
+        <li data-filter=".Featured">Featured</li>
+        <li data-filter=".Specials">Today's Special</li>
+        <li data-filter=".Arrivals">New Arrivals</li>
     </div>
 
         <div class="menu__content">
             
-            <div class="box">
+            <div class="box All Featured">
                 <div class="image">
                     <img src="/images/menu/food1.jpg" alt="food1">
                 </div>
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box All Featured">
                 <div class="image">
                     <img src="/images/menu/food2.jpg" alt="food1">
                 </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box All Specials">
                 <div class="image">
                     <img src="/images/menu/food3.jpg" alt="food1">
                 </div>
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box All Arrivals">
                 <div class="image">
                     <img src="/images/menu/food4.jpg" alt="food1">
                 </div>
@@ -167,7 +167,7 @@
                 </div>
             </div>
         
-            <div class="box">
+            <div class="box All Specials">
                 <div class="image">
                     <img src="/images/menu/food5.jpg" alt="food1">
                 </div>
@@ -186,7 +186,7 @@
                 </div>
             </div>
         
-            <div class="box">
+            <div class="box All Specials">
                 <div class="image">
                     <img src="/images/menu/food6.jpg" alt="food1">
                 </div>
@@ -205,7 +205,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box All Arrivals">
                 <div class="image">
                     <img src="/images/menu/food7.jpg" alt="food1">
                 </div>
@@ -223,8 +223,8 @@
                     <article>Category: Featured</article>
                 </div>
             </div>
-
-            <div class="box">
+ 
+            <div class="box All Featured">
                 <div class="image">
                     <img src="/images/menu/food8.jpg" alt="food1">
                 </div>
@@ -243,7 +243,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box All Arrivals">
                 <div class="image">
                     <img src="/images/menu/food9.jpg" alt="food1">
                 </div>
@@ -270,7 +270,7 @@
 
 <!-----------------------------GALLERY ----------------->
 
-<section class="gallery__container">
+<section id="gallery" class="gallery__container">
     <div class="gallery__text">
         <h1>Our Restaurant</h1>
         <hr>
@@ -291,6 +291,85 @@
     </div>
 </section>
 
+<!--------------------------BOOKING SECTION -------------->
+
+<section id="bookings" class="booking">
+    <div class="main__text">
+        <h1>Book now</h1>
+        <h3>Book Your Table Don't Hesitate</h3>
+    </div>
+    <div class="forms">
+        <div class="form">
+            <h3>Your full name?</h3>
+            <input class="input" type="form" placeholder="your name">
+        </div>
+        <div class="form">
+            <h3>Your email address?</h3>
+            <input class="input" type="form" placeholder="example@gmail.com">
+        </div>
+        <div class="form">
+            <h3>How many people?</h3>
+            <input  class="input" type="form" placeholder="2 people &#xf078">
+        </div>
+        <div class="form">
+            <h3>What time?</h3>
+            <input class="input" type="form" placeholder="20:00 PM">
+        </div>
+        <div class="form">
+            <h3>What is the date?</h3>
+            <input class="input" type="form" placeholder="08/06/2024">
+        </div>
+        <div class="form">
+            <h3>Your phone number?</h3>
+            <input class="input" type="form" placeholder="+1 000 000 000">
+        </div>
+    </div>
+    <div class="btn">
+    <button  class="booking__btn">book now</button>
+</div>
+</section>
+
+<!-------------------------------END OF BOOKING SECTION --------------->
+
+<!-------------------------------CONTACT SECTION --------------->
+
+<div id="contact" class="contact__section">
+    <div class="contact__image">
+        <img src="/images/contact_img.jpg" alt="Contact Image">
+    </div>
+    <div class="contact__overlay">
+    <div class="contact__text">
+        <h1>Contact Us</h1>
+        <h3>HOW TO GET IN TOUCH?</h3>
+        <p>
+            “ Do you have a few testimonials woth showing it off to the wold? This is where you can. Testimonials not only make
+            you fell happy,, but also help attract new customers and build trust and a healthy customer relationship.”
+        </p>
+        <h4>NANCY LEBLANC</h4>
+    </div>
+    <div class="info">
+        <h4>Address</h4>
+        <p>123 Fifth Avenue, New York, NY 10160, USA</p>
+        <h4>Phone Number</h4>
+        <p>+1 910-626-85255</p>
+        <h4>EMAIL ADRESS</h4>
+        <p>contact@tech.com</p>
+    </div>
+    <div class="socials">
+        <h4>FOLLOW ME</h4>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+</div>
+</div>
+
+<!--------------------------END OF COANTCT SECTION------------>
+
+<footer> 
+    <p>&copy All rights reserved</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

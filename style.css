@@ -307,7 +307,7 @@
 }
 
 .text .stars {
-    margin-bottom: -2px;
+    margin-bottom: 3px;
 }
 
 .text .stars i {
@@ -370,8 +370,9 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 100%, 71%, 0.25);
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 100%, 71%, 0.459);
     border-radius: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.616);
     scrollbar-width: none;
 }
 
@@ -404,4 +405,185 @@
 
 .slider__nav a :hover {
     opacity: 1;
+}
+
+
+ .booking {
+    background-color: #121213;
+    display: inline-block;
+    width: 100%;
+    height: 750px;
+    color: #fff;
+}
+
+.booking .main__text {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.main__text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main__text h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+ .forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 760px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    color: #fff;
+}
+
+.forms .form input{
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    border: 2px solid rgba(224, 55, 55, 0.637);
+    background-color: #121213;
+    padding: 6px;
+    color: #fff;
+}
+
+.form {
+    padding: 30px;
+}
+
+
+input {
+    font-family: "FontAwesome";
+    font-size: 10px;
+}
+
+.form h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+section .btn  .booking__btn {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: none;
+    width: 150px;
+    height: 35px;
+    background-color: #ce3434;;
+    cursor: pointer;
+    text-align: center;
+    transition: .4s ease-in-out;
+}
+
+section .btn  .booking__btn:hover {
+    transition: 03s ease-in-out;
+    background-color: #b84747;
+}
+
+.btn {
+    text-align: center;
+}
+
+
+.contact__section {
+    background-color: #121213;
+    color: #fff;
+    position:  relative; 
+    height: auto;
+    width: 100%;
+}
+
+.contact__content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact__image  {
+   position: relative;
+   width: 50%;
+   height: auto;
+}
+
+.contact__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.233); /* Optional: To make the text more readable over the image */
+    padding: 20px;
+}
+
+.contact__text, .info, .socials {
+    margin-bottom: 20px;
+}
+
+
+
+.contact__text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.contact__text h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contact__text p {
+    width: 800px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.info h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.info p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.socials h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.socials i {
+    margin: 0 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+footer {
+    background-color :#121213;
+    color: #fff;
+    text-align: center;
 }
