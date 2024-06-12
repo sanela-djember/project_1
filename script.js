@@ -46,6 +46,9 @@ function hideSidebar(){
 
 //gallery 
 
+
+
+
 let slideIndex = 1;
 showSlide(slideIndex);
 
@@ -82,4 +85,4 @@ function showSlide(n) {
         slides[i].style.display = "none"; 
     }
     slides[slideIndex - 1].style.display = "flex"; 
-}
+} 
