@@ -15,8 +15,7 @@
      <a class="logo" href="#">Logo</a>
      <div class="nav__links">
         <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px"  fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li> 
                 <a href="#" onclick="navigateToSection('about')">About us</a>
             </li>
@@ -64,7 +63,7 @@
     <h3>Food of your own choice</h3>
     <button onclick="book()">Book a table</button>
 </div>
-
+</div>
 <!-------------------------------END OF HERO SECTION -------------->
 
 </div>
@@ -85,10 +84,9 @@
     <h2>
         Visit Our Menu
       </h2> 
-    <a href="#">NOW</a>
+    <span>NOW</span>
  </div>
 </div>
-
 
 
 <!-----------------------------------END ABOUT SECTION ------------------------>
@@ -288,33 +286,37 @@
 
   </div>
 
+  <div class="img_section"></div>
 
   
 <!-------------------------END OF MENU BOX SECTION --------------->
 
 <!-----------------------------GALLERY ----------------->
 
-<section id="gallery" class="gallery__container">
-    <div class="gallery__text">
-        <h1>Our Restaurant</h1>
-        <hr>
-         <h3>Book a reservation!</h3>
-    </div>
-    
-    <div class="slider__wrapper">
-        <div id="slider" class="slider">
-            <img id="slide-1" src="/images/gallery/jason-leung-poI7DelFiVA-unsplash.jpg" alt="">
-            <img id="slide-2" src="/images/gallery/alex-haney-CAhjZmVk5H4-unsplash.jpg" alt="">
-            <img id="slide-3" src="/images/gallery/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-            <div class="slider__nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
+
+
+<div class="slides">
+   
+    <div class="container_slide">
+        <div class="gallery__text">
+            <h1>Our Restaurant</h1>
+            <h3>Take A Look!</h3>
+        </div>
+        <div class="slide slide-1 active">
+            <img src="/images/gallery/image2.jpg" alt="">
+        </div>
+        <div class="slide slide-2">
+            <img src="/images/gallery/image1.jpg" alt="">
+        </div>
+        <div class="slide slide-3">
+            <img src="/images/gallery/image3.jpg" alt="">
         </div>
     </div>
-    <hr class="gallery_hr">
-</section>
+    <div class="arrows">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
 
 <!--------------------------BOOKING SECTION -------------->
 
@@ -426,12 +428,12 @@
         <div class="footer__links">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="navigateToSection('about')">About Us</a></li>
+                <li><a href="#" onclick="navigateToSection('menu')">Menu</a></li>
+                <li><a href="#" onclick="navigateToSection('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="navigateToSection('contact')">Contact</a></li>
             </ul>
+            <p>123 Main Street, Anytown, USA<br>Email: info@example.com<br>Phone: +1 (123) 456-7890</p>
         </div>
     </div>
     <div class="footer__bottom">
