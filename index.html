@@ -16,19 +16,19 @@
      <div class="nav__links">
         <ul>
             <li> 
-                <a href="#">About us</a>
+                <a href="#" onclick="navigateToSection('about')">About us</a>
             </li>
             <li> 
-                <a href="#">Menu</a>
+                <a href="#" onclick="navigateToSection('menu')">Menu</a>
             </li>
             <li> 
-                <a href="#">Gallery</a>
+                <a href="#" onclick="navigateToSection('gallery')">Gallery</a>
             </li>
             <li> 
-                <a href="#">BOOKINGS</a>
+                <a href="#" onclick="navigateToSection('bookings')">BOOKINGS</a>
             </li>
             <li> 
-                <a href="#">CONTACT</a>
+                <a href="#" onclick="navigateToSection('contact')">CONTACT</a>
             </li>
         </ul>
      </div>
@@ -42,7 +42,7 @@
         OUR EXCLUSIVE MENU
     </h1>
     <h3>Food of your own choice</h3>
-    <button>Book a table</button>
+    <button onclick="book()">Book a table</button>
 </div>
 
 <!-------------------------------END OF HERO SECTION -------------->
@@ -68,6 +68,8 @@
     <a href="#">NOW</a>
  </div>
 </div>
+
+
 
 <!-----------------------------------END ABOUT SECTION ------------------------>
 
@@ -266,6 +268,8 @@
 
   </div>
 
+
+  
 <!-------------------------END OF MENU BOX SECTION --------------->
 
 <!-----------------------------GALLERY ----------------->
@@ -289,6 +293,7 @@
             </div>
         </div>
     </div>
+    <hr class="gallery_hr">
 </section>
 
 <!--------------------------BOOKING SECTION -------------->
@@ -334,16 +339,13 @@
 <!-------------------------------CONTACT SECTION --------------->
 
 <div id="contact" class="contact__section">
-    <div class="contact__image">
-        <img src="/images/contact_img.jpg" alt="Contact Image">
-    </div>
-    <div class="contact__overlay">
+    <div class="contact__container">
     <div class="contact__text">
         <h1>Contact Us</h1>
         <h3>HOW TO GET IN TOUCH?</h3>
         <p>
-            “ Do you have a few testimonials woth showing it off to the wold? This is where you can. Testimonials not only make
-            you fell happy,, but also help attract new customers and build trust and a healthy customer relationship.”
+         “ Do you have a few testimonials woth showing it off to the wold? This is where you can. Testimonials not only make
+        you fell happy,, but also help attract new customers and build trust and a healthy customer relationship.”
         </p>
         <h4>NANCY LEBLANC</h4>
     </div>
@@ -355,21 +357,68 @@
         <h4>EMAIL ADRESS</h4>
         <p>contact@tech.com</p>
     </div>
-    <div class="socials">
-        <h4>FOLLOW ME</h4>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-x-twitter"></i>
+    <div class="contact_form">
+
+        <form action="#">
+    
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" placeholder="Your name...">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="eu">Eu</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+        </form>
+        
     </div>
+  </div>
 </div>
-</div>
+
 
 <!--------------------------END OF COANTCT SECTION------------>
 
-<footer> 
-    <p>&copy All rights reserved</p>
+
+<!----------------------------FOOTER ------------------------->
+<footer class="footer__section">
+    <div class="footer__container">
+        <div class="footer__text">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media to stay up-to-date with our latest offers and events.</p>
+            <div class="social__icons">
+                <a href="#" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer__links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>&copy; 2024 All rights reserved.</p>
+    </div>
 </footer>
+
 
 <script src="script.js"></script>
 </body>

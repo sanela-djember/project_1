@@ -1,3 +1,16 @@
+// book a table click event .hero section
+
+function book(){
+    document.getElementById('bookings').scrollIntoView({behavior: 'smooth'});
+}
+
+
+// nav links click event
+
+function navigateToSection(sectionId) {
+   document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'})
+}
+
 
 
 // menu list click 
