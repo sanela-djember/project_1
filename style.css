@@ -15,6 +15,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* nav */
+
 .container {
     min-height: 100vh;
     background-image: url(/images/hero_edited.jpg);
@@ -41,15 +43,15 @@
     list-style: none
 }
 
-.nav__links a {
+.nav__links ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
-.nav__links a::after {
+.nav__links ul li a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -61,7 +63,7 @@
     transition: .4s ease-in-out;
 }
 
-.nav__links a:hover::after {
+.nav__links ul li a:hover::after {
     width: 100%;
 }
 
@@ -72,8 +74,43 @@
     font-weight: 500;
     cursor: pointer;
     color: white;
-    
 }
+
+.nav__links .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.nav__links .sidebar a {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav__links .sidebar a:hover::after {
+    width: 100%;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+/* hero section */
 
 .container .hero__section {
     margin-top: 18%;
@@ -112,6 +149,8 @@
     background-color: #7a1919;
     transition: all 0.2s ease;
 }
+
+/* about section */
 
 .about__section {
     background-image: url(/images/about.jpg);
@@ -172,6 +211,7 @@
     transition: all 0.2s ease;
 }
 
+/* menu section */
 
 .menu__container {
     max-width: 100%;
@@ -328,6 +368,7 @@
     }
 }
 
+/* gallery section */
 
 .gallery__container {
     padding: 2rem;
@@ -345,7 +386,6 @@
     height: 2px;
     width: 40%;
     margin: 10px auto;
-    
 }
 
 .gallery_hr {
@@ -365,26 +405,28 @@
 }
 
 .slider__wrapper {
- position: relative;
- max-width: 45rem;
- margin: 0 auto;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
 }
 
- .slider {
+.slider {
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 100%, 71%, 0.459);
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 100%, 71%, 0.192);
     border-radius: 0.5rem;
     border: 2px solid rgba(255, 255, 255, 0.616);
     scrollbar-width: none;
 }
 
-.slider::-webkit-scrollbar { display: none; }
+.slider::-webkit-scrollbar {
+    display: none;
+}
 
- .slider img {
+.slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
@@ -409,10 +451,12 @@
     transition: opacity ease 250ms;
 }
 
-.slider__nav a :hover {
+.slider__nav a:hover {
     opacity: 1;
 }
 
+
+/* booking section */
 
  .booking {
     background-color: #121213;
@@ -497,12 +541,13 @@ section .btn  .booking__btn:hover {
     text-align: center;
 }
 
+
+/* contact section */
+
 #contact{
     height: auto;
     color: #fff;
-    
 }
-
 
 #contact .contact_container {
     display: flex;
@@ -571,6 +616,7 @@ section .btn  .booking__btn:hover {
 .contact_form label {
     font-weight: bold;
     font-size: 18px; 
+    margin-top: 10px;
 }
 
 .contact_form input,
@@ -597,7 +643,8 @@ section .btn  .booking__btn:hover {
     border: none;
     border-radius: 4px;
     transition: background-color 0.3s;
-    font-size: 16px; 
+    font-size: 16px;
+    margin-left: 25px; 
 }
 
 .contact_form input[type="submit"]:hover {
@@ -616,6 +663,7 @@ section .btn  .booking__btn:hover {
     margin-bottom: 20px;
 }
 
+/* footer section */
 
 .footer__section {
     background-color: #121213;
@@ -688,3 +736,14 @@ section .btn  .booking__btn:hover {
     font-size: 16px;
 }
 
+
+/* responsive  */
+
+
+/* Tablet styles */
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+
+
+}
