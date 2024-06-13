@@ -740,9 +740,190 @@ section .booking__btn:hover {
 /* Tablet styles */
 
 @media screen and (max-width: 768px) {
-     .hideOnMobile {
+    .hideOnMobile {
         display: none;
+      }
+     
+      .showOnMobile {
+          display: block;
+      }
+  
+      .container {
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+
+      
+    .hero__section {
+        width: 280px;
+        padding: 10px;
     }
+
+    .hero__section h1 {
+       font-size: 40px;
+       margin-bottom: 40px;
+    }
+
+    .hero__section h3 {
+        margin-bottom: 38px;
+    }
+
+   .hero__section button {
+      display: none;
+   }
+
+   .about__section {
+    display: inline-block;
+    max-width: 100%;
+ }
+
+ .about__section p {
+    font-size: 22px;
+ }
+
+ .menu__container {
+    max-width: 100%;
+}
+ .menu__content  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+ }
+
+ .menu__content .box {
+    width: 42%;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: rgba(214, 218, 0, 0.233) 0px 0px 3px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box .image {
+    width: fit-content;
+    text-align: center;
+}
+
+ .img_section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+ }
+
+.menu__container .title h2{
+   font-size: 36px;
+   text-align: center;
+}
+
+.slides {
+    width: 100%;
+    padding: 50px;
+}
+
+.slides .slide {
+    width: 80%;
+}
+
+.slides .gallery__text h1 {
+    font-size: 32px;
+}
+
+.slides .gallery__text h3 {
+    font-size: 28px;
+}
+
+.booking {
+    margin: 0;
+    padding: 0;
+}
+
+.booking .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.booking .forms {
+    max-width: 280px;
+    height: 500px;
+}
+
+.booking .booking__btn {
+    display: none;
+}
+
+.booking .main__text {
+    margin: 20px;
+}
+
+.booking .mobile_booking_btn {
+    color: #000000;
+    font-size: 18px;
+    padding: 3px;
+    width: 260px;
+    background-color: #f3ff51;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    height: 35px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.contact__section .contact__text h1{
+   font-size: 34px;
+}
+
+.contact__section .contact__text h3 {
+    font-size: 26px;
+}
+
+.contact__section .contact__text p {
+    font-size: 14px;
+}
+
+.contact__section .contact__text h4 {
+    font-size: 16px;
+}
+
+.contact__section .contact_form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contact__container .contact_form form {
+    display: block;
+    padding: 10px;
+}
+
+.contact__section .info h4 {
+  font-size: 28px;
+}
+
+.contact_form input[type="submit"] {
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 }
 
 

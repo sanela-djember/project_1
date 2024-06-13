@@ -7,10 +7,29 @@ function book(){
 
 // nav links click event
 
-function navigateToSection(sectionId) {
-   document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'})
+document.addEventListener('DOMContentLoaded', function() {
+    function navigateToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.error(`Element with ID '${sectionId}' not found`);
+        }
+    }
+
+    window.navigateToSection = navigateToSection;
+});
+
+
+function hideSidebar() {
+    console.log("Sidebar hidden");
+   
 }
 
+function showSidebar() {
+    console.log("Sidebar shown");
+  
+}
 
 
 // menu list click 
