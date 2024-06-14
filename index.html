@@ -3,9 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Restaurant</title>
 </head>
 <body>
     
+  <!---------------------------------NAVBAR----------------------------->
+  <div class="container">
+    <nav class="navbar">
+      <a class="logo" href="#">Logo</a>
+      <div class="nav__links">
+         <ul class="sidebar">
+             <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px"  fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+             <li> 
+                 <a href="#" onclick="navigateToSection('about')">About us</a>
+             </li>
+             <li> 
+                 <a href="#" onclick="navigateToSection('menu')">Menu</a>
+             </li>
+             <li> 
+                 <a href="#" onclick="navigateToSection('gallery')">Gallery</a>
+             </li>
+             <li> 
+                 <a href="#" onclick="navigateToSection('bookings')">BOOKINGS</a>
+             </li>
+             <li> 
+                 <a href="#" onclick="navigateToSection('contact')">CONTACT</a>
+             </li>
+         </ul>
+         <ul>
+             <li class="hideOnMobile"> 
+                 <a href="#" onclick="navigateToSection('about')">About us</a>
+             </li>
+             <li class="hideOnMobile"> 
+                 <a href="#" onclick="navigateToSection('menu')">Menu</a>
+             </li>
+             <li class="hideOnMobile"> 
+                 <a href="#" onclick="navigateToSection('gallery')">Gallery</a>
+             </li>
+             <li class="hideOnMobile"> 
+                 <a href="#" onclick="navigateToSection('bookings')">BOOKINGS</a>
+             </li>
+             <li class="hideOnMobile"> 
+                 <a href="#" onclick="navigateToSection('contact')">CONTACT</a>
+             </li>
+             <li class="showOnMobile"  onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  height="30px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed "><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+         </ul>
+      </div>
+    </nav>
+<!------------------------------------END OF NAVBAR---------------------->
+<!-------------------------------HERO SECTION -------------->
+
+<div class="hero__section">
+    <h1>
+        START YOUR DAY WITH <br> 
+        OUR EXCLUSIVE MENU
+    </h1>
+    <h3>Food of your own choice</h3>
+    <button onclick="book()">Book a table</button>
+    <p>Book A Table</p>
+    <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+</div>
+</div>
+
+<!-------------------------------END OF HERO SECTION -------------->
+
+
+
+<!----------------------------------ABOUT SECTION --------------------->
+
+<div id="about" class="about__section">
+ <div class="content">
+    <h1>
+        ABOUT <span>LoremIpsum</span>
+      </h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum officia rerum, quod maiores debitis itaque exercitationem obcaecati velit vel harum esse officiis ipsum recusandae ea, dolores, fuga corporis voluptatem! Sequi.
+    Ipsum aut blanditiis, eum delectus voluptate dolores doloribus nihil sint dolorem libero totam adipisci atque. Voluptatibus iure nam harum esse officiis ipsum recusandae ea, dolores, fuga corporis voluptatem! dolore cum explicabo voluptas possimus, quidem incidunt quisquam harum aut doloribus ptate dolores doloribus nihil sint dolorem libero totam adipisci atque. Voluptatibus iure nam do. Tempora?.
+      </p>
+    <h2>
+        Visit Our Menu
+      </h2> 
+    <span>NOW</span>
+ </div>
+</div>
+
+
+<!-----------------------------------END ABOUT SECTION ------------------------>
+
+<!---------------------------MENU SECTION --------------------------------->
+
+<div id="menu" class="menu__container">
+    <div class="title">
+        <h2>
+            Special <span>Food</span>Menu
+        </h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga fugit non ea, tempore tempora impedit alias autem, ut deleniti earum, adipisci praesentium quos laboriosam aperiam voluptas quisquam mollitia quasi? Veritatis repellendus rerum, numquam reprehenderit sapiente expedita tempora a dolorum.
+        </p>
+    </div>
+    <div class="links">
+        <li data-filter=".All">All</li>
+        <li data-filter=".Featured">Featured</li>
+        <li data-filter=".Specials">Today's Special</li>
+        <li data-filter=".Arrivals">New Arrivals</li>
+    </div>
+
+        <div class="menu__content">
+            
+            <div class="box All Featured">
+                <div class="image">
+                    <img src="/images/menu/food1.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Soft Burger</h3>
+                    <hr>
+                    <section>28.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+
+            <div class="box All Featured">
+                <div class="image">
+                    <img src="/images/menu/food2.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Spaghetti Italiano</h3>
+                    <hr>
+                    <section>25.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+
+            <div class="box All Specials">
+                <div class="image">
+                    <img src="/images/menu/food3.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Salmon with Veggies</h3>
+                    <hr>
+                    <section>35.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+
+            <div class="box All Arrivals">
+                <div class="image">
+                    <img src="/images/menu/food4.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Pork</h3>
+                    <hr>
+                    <section>22.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+        
+            <div class="box All Specials">
+                <div class="image">
+                    <img src="/images/menu/food5.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Beef</h3>
+                    <hr>
+                    <section>28.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+        
+            <div class="box All Specials">
+                <div class="image">
+                    <img src="/images/menu/food6.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Lava Cake</h3>
+                    <hr>
+                    <section>10.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+
+            <div class="box All Arrivals">
+                <div class="image">
+                    <img src="/images/menu/food7.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Orange Cake</h3>
+                    <hr>
+                    <section>15.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+ 
+            <div class="box All Featured">
+                <div class="image">
+                    <img src="/images/menu/food8.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Raspberry Cake</h3>
+                    <hr>
+                    <section>20.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+
+            <div class="box All Arrivals">
+                <div class="image">
+                    <img src="/images/menu/food9.jpg" alt="food1">
+                </div>
+                <div class="text">
+                    <h3>Soft Pork</h3>
+                    <hr>
+                    <section>28.00$</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Featured</article>
+                </div>
+            </div>
+        
+        </div>   
+
+  </div>
+
+  <div class="img_section"></div>
+
+  
+<!-------------------------END OF MENU BOX SECTION --------------->
+
+<!-----------------------------GALLERY ----------------->
+
+
+
+<div id="gallery" class="slides">
+   
+    <div class="container_slide">
+        <div class="gallery__text">
+            <h1>Our Restaurant</h1>
+            <h3>Take A Look!</h3>
+        </div>
+        <div class="slide slide-1 active">
+            <img src="/images/gallery/image2.jpg" alt="">
+        </div>
+        <div class="slide slide-2">
+            <img src="/images/gallery/image1.jpg" alt="">
+        </div>
+        <div class="slide slide-3">
+            <img src="/images/gallery/image3.jpg" alt="">
+        </div>
+    </div>
+    <div class="arrows">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+<!--------------------------BOOKING SECTION -------------->
+
+<div id="bookings" class="booking">
+    <div class="main__text">
+        <h1>Book now</h1>
+        <h3>Book Your Table Don't Hesitate</h3>
+    </div>
+    <div class="forms">
+        <div class="form">
+            <h3>Your full name?</h3>
+            <input class="input" type="form" placeholder="your name">
+        </div>
+        <div class="form">
+            <h3>Your email address?</h3>
+            <input class="input" type="form" placeholder="example@gmail.com">
+        </div>
+        <div class="form">
+            <h3>How many people?</h3>
+            <input  class="input" type="form" placeholder="2 people &#xf078">
+        </div>
+        <div class="form">
+            <h3>What time?</h3>
+            <input class="input" type="form" placeholder="20:00 PM">
+        </div>
+        <div class="form">
+            <h3>What is the date?</h3>
+            <input class="input" type="form" placeholder="08/06/2024">
+        </div>
+        <div class="form">
+            <h3>Your phone number?</h3>
+            <input class="input" type="form" placeholder="+1 000 000 000">
+        </div>
+    </div>
+    <div class="btn">
+    <button  class="booking__btn">book now</button>
+    <button class="mobile_booking_btn">book now</button>
+</div>
+</div>
+
+<!-------------------------------END OF BOOKING SECTION --------------->
+
+<!-------------------------------CONTACT SECTION --------------->
+
+<div id="contact" class="contact__section">
+    <div class="contact__container">
+    <div class="contact__text">
+        <h1>Contact Us</h1>
+        <h3>HOW TO GET IN TOUCH?</h3>
+        <p>
+         “ Do you have a few testimonials woth showing it off to the wold? This is where you can. Testimonials not only make
+        you fell happy,, but also help attract new customers and build trust and a healthy customer relationship.”
+        </p>
+        <h4>NANCY LEBLANC</h4>
+    </div>
+    <div class="info">
+        <h4>Address</h4>
+        <p>123 Fifth Avenue, New York, NY 10160, USA</p>
+        <h4>Phone Number</h4>
+        <p>+1 910-626-85255</p>
+        <h4>Email Adress</h4>
+        <p>contact@tech.com</p>
+    </div>
+    <div class="contact_form">
+
+        <form action="#">
+    
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" placeholder="Your name...">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="eu">EU</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+        </form>
+        
+    </div>
+  </div>
+</div>
+
+
+<!--------------------------END OF COANTCT SECTION------------>
+
+
+<!----------------------------FOOTER ------------------------->
+<footer class="footer__section">
+    <div class="footer__container">
+        <div class="footer__text">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media to stay up-to-date with our latest offers and events.</p>
+            <div class="social__icons">
+                <a href="#" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social__icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer__links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#" onclick="navigateToSection('about')">About Us</a></li>
+                <li><a href="#" onclick="navigateToSection('menu')">Menu</a></li>
+                <li><a href="#" onclick="navigateToSection('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="navigateToSection('contact')">Contact</a></li>
+            </ul>
+            <p>123 Main Street, Anytown, USA<br>Email: info@example.com<br>Phone: +1 (123) 456-7890</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>&copy; 2024 All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
